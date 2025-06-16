@@ -1,0 +1,12 @@
+.connectwithMe{
+    background: #373737;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.connectwithMe:hover{
+transform: scale(1.05);
+}
+.tizminelogo{
+    height: 30px;
+   
+}

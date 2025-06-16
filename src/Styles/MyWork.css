@@ -1,0 +1,21 @@
+.mywork-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.mywork-format:hover{
+    border: 2px solid #ff00ff;
+    transform: scale(1.05);
+    transition: 0.4s;
+ }
+.mywork-format img {
+    width: 300px;
+}
+
+
