@@ -4,6 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const coreValues = [
   {
@@ -67,9 +70,10 @@ const industries = [
 ];
 
 const ValueCard = ({ item, active, onClick }) => (
+  
   <div
     onClick={onClick}
-    className={`bg-white p-5 rounded-xl shadow-lg transition-all duration-300 cursor-pointer border hover:shadow-xl ${
+    className={`bg-transparent p-5 rounded-xl shadow-lg transition-all duration-300 cursor-pointer border hover:shadow-xl ${
       active ? "bg-[#f8f9fa]" : ""
     }`}
   >
@@ -88,6 +92,14 @@ const ValueCard = ({ item, active, onClick }) => (
 export default function AboutSection() {
   const [activeCore, setActiveCore] = useState(null);
   const [activeIndustry, setActiveIndustry] = useState(null);
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  }, []);
+
+  
 
   return (
     <section className="bg-gray-100 px-4 sm:px-8 py-20">
@@ -103,8 +115,8 @@ export default function AboutSection() {
       {/* Desktop view */}
       <div className="hidden md:grid grid-cols-2 gap-6 max-w-6xl mx-auto">
         <div>
-          <h3 className="text-2xl font-bold mb-4">Our Core Values</h3>
-          <div className="space-y-4">
+          <h3 className="text-2xl font-bold mb-4" data-aos="fade-up">Our Core Values</h3>
+          <div className="space-y-4" data-aos="fade-up">
             {coreValues.map((item, i) => (
               <ValueCard
                 key={i}
@@ -116,8 +128,8 @@ export default function AboutSection() {
           </div>
         </div>
         <div>
-          <h3 className="text-2xl font-bold mb-4">Industries We Serve</h3>
-          <div className="space-y-4">
+          <h3 className="text-2xl font-bold mb-4" data-aos="fade-up">Industries We Serve</h3>
+          <div className="space-y-4" data-aos="fade-up">
             {industries.map((item, i) => (
               <ValueCard
                 key={i}
@@ -156,7 +168,7 @@ export default function AboutSection() {
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <h3 className="text-xl font-bold mb-3">Industries We Serve</h3>
+              <h3 className="text-xl font-bold mb-3 ">Industries We Serve</h3>
               {industries.map((item, i) => (
                 <ValueCard
                   key={i}

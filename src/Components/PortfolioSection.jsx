@@ -2,10 +2,10 @@ import { useState } from "react";
 
 const categories = {
   "App Development": [
-    "/BeFunky-design (2).png",
-    "/BeFunky-design (7).png",
-    "/BeFunky-design 2.png",
-    "/BeFunky-design.png",
+    "/BeFunkydesign1.png",
+    "/BeFunkydesign2.png",
+    "/BeFunkydesign3.png",
+    "/BeFunkydesign4.png",
   
 
   ],
