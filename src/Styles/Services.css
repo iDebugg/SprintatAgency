@@ -71,3 +71,14 @@
     linear-gradient(180deg, #373737 10%, #373737 40%, #373737 60%, #373737 100%);
     background-size: 15px 15px;
 }
+
+.clip-folder-tab {
+  clip-path: polygon(
+    0 0,
+    80% 0,
+    85% 30%,
+    100% 30%,
+    100% 100%,
+    0 100%
+  );
+}

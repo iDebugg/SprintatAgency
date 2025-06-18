@@ -1,103 +1,154 @@
-import React from "react";
-import "../Styles/Services.css";
+import React, { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+
+const services = [
+  {
+    id: 1,
+    title: "App Development",
+    week: "01",
+    desc: "Build seamless, high-performance mobile apps that users love.",
+    image: "/BeFunky-design.png",
+    details: [
+      "Native iOS & Android Development",
+      "API Integration & Backend Services",
+      "App Store & Play Store Deployment",
+      "Maintenance & Version Upgrades",
+      "Cross-platform Apps (Flutter, React Native)",
+    ],
+  },
+  {
+    id: 2,
+    title: "Web Development",
+    week: "02",
+    desc: "Fast, secure, and responsive websites built for modern business.",
+    image: "/BeFunky-design (2).png",
+    details: [
+      "Custom Web Applications",
+      "E-commerce Platforms.",
+      "CMS Solutions (WordPress, Webflow)",
+      "Backend Development (Node.js, Django, Laravel)",
+      "Frontend Development (React, Vue, Angular)"
+    ],
+  },
+  {
+    id: 3,
+    title: "UI/UX Design",
+    week: "03",
+    desc: "Design that goes beyond aesthetics — we craft experiences users remember.",
+    image: "/BeFunky-design 2.png",
+    details: [
+      "UX Research & Wireframing",
+      "High-Fidelity UI Design",
+      "Prototyping (Figma, Adobe XD)",
+      "Design Systems & Brand Guidelines",
+      "Usability Testing & Iteration"
+    ],
+  },
+  {
+    id: 4,
+    title: "Graphic Design",
+    week: "04",
+    desc: "Design that speaks for your brand. We craft eye pleasing designs",
+    image: "/BeFunky-design (7).png",
+    details: [
+      "High end designs",
+      "Prortyping (Canva)",
+      "Performance monitoring",
+      "Post-launch support",
+    ],
+  },
+];
 
 const Services = () => {
   useEffect(() => {
     AOS.init({
       duration: 800,
-      once: false,
-      mirror: true,
+      once: true,
     });
   }, []);
+  const [activeId, setActiveId] = useState(null);
+
+  const handleClick = (id) => {
+    setActiveId((prev) => (prev === id ? null : id));
+  };
 
   return (
-    <section id="Services" className="contact py-12 bg-gray-100">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-10">
-          <h2 className="text-[#373737]  text-4xl font-bold">Our Services</h2>
-          <p className="text-lg text-gray-600 mt-2 text-center">
-            we turn ideas into powerful digital experiences. Whether you're a{" "}
-            <br />
-            startup looking to build your MVP or an enterprise scaling your
-            digital presence.
-          </p>
-        </div>
+    <section className="pr-3 pl-3 sm:pr-4 sm:pl-4 md:pr-20 md:pl-20clg:pr-20 lg:pl-20 bg-gray-100">
+      <div className="text-center mb-20 ">
+        <h2 className="text-[#373737]  text-4xl font-bold">Our Services</h2>
+        <p className="text-lg text-gray-600 mt-2 text-center">
+          we turn ideas into powerful digital experiences. Whether you're a{" "}
+          <br />
+          startup looking to build your MVP or an enterprise scaling your
+          digital presence.
+        </p>
+      </div>
+      <div className="relative z-10" data-aos="fade-up">
+        <div className=" mx-auto relative">
+          {services.map((service, index) => {
+            const isOpen = activeId === service.id;
+            const isAboveOpen = activeId && service.id > activeId;
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div
-            className="bg-[#dafb18] rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow p-2"
-            data-aos="fade-down"
-            data-aos-delay="100"
-          >
-            <div className="bg-gray-100 h-full rounded-lg px-2 py-4">
-              <h1 className="text-lg font-bold text-[#373737]">
-                Mobile App Development
-              </h1>
-              <h3 className="mb-2 text-gray-600">
-                Build seamless, high-performance mobile apps that users love.
-              </h3>
-              <h3 className="font-bold mb-2 text-[#373737]">What we offer:</h3>
-              <ul className="list-disc pl-6 space-y-2 text-gray-600">
-                <li>Native iOS & Android Development</li>
-                <li>Cross-platform Apps (Flutter, React Native)</li>
-                <li>API Integration & Backend Services</li>
-                <li>App Store & Play Store Deployment</li>
-                <li>Maintenance & Version Upgrades</li>
-              </ul>
-            </div>
-          </div>
+            return (
+              <div
+                key={service.id}
+                onClick={() => handleClick(service.id)}
+                className={`relative z-[${
+                  50 - index
+                }] transition-all duration-500 ease-in-out cursor-pointer
+              ${isOpen ? "mb-2" : "-mt-20"}
+              ${isAboveOpen ? "translate-y-20" : ""}
+            `}
+                style={{ transitionDelay: `${index * 100}ms` }}
+              >
+                <div className="bg-white shadow-xl border rounded-2xl overflow-hidden">
+                  <div className="flex items-center gap-4 px-6 py-4 bg-gradient-to-r from-[#00c9ff] to-[#92fe9d]">
+                    <div className="bg-white px-3 py-1 text-sm font-semibold rounded-full shadow text-gray-800">
+                      [ {service.week} ]
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-800 ">
+                      {service.title}
+                    </h3>
+                  </div>
 
-          <div
-            className="bg-[#dafb18] rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow p-2"
-            data-aos="fade-down"
-            data-aos-delay="300"
-          >
-            <div className="bg-gray-100 h-full rounded-lg px-2 py-4">
-              <h1 className="text-lg font-bold texttext-[#373737]">
-                Web Development
-              </h1>
-              <h3 className="mb-2 text-gray-600">
-                Fast, secure, and responsive websites built for modern business.
-              </h3>
-              <h3 className="font-bold mb-2 text-text-[#373737]">
-                Our expertise includes:
-              </h3>
-              <ul className="list-disc pl-6 space-y-2 text-gray-600">
-                <li>Custom Web Applications</li>
-                <li>Frontend Development (React, Vue, Angular)</li>
-                <li>Backend Development (Node.js, Django, Laravel)</li>
-                <li>CMS Solutions (WordPress, Webflow)</li>
-                <li>E-commerce Platforms.</li>
-              </ul>
-            </div>
-          </div>
+                  
+                  <div
+                    className={`flex flex-col lg:flex-row transition-all duration-500 ${
+                      isOpen ? "max-h-[1000px]" : "max-h-[150px]"
+                    } overflow-hidden`}
+                  >
+           
+                    <div className="lg:w-1/2 w-full">
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
 
-          <div
-            className="bg-[#dafb18] rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow p-2"
-            data-aos="fade-down"
-            data-aos-delay="500"
-          >
-            <div className="bg-gray-100 h-full rounded-lg px-2 py-4">
-              <h1 className="text-lg font-bold text-[#373737]">UI/UX Design</h1>
-              <h3 className="mb-2 text-[gray-600]">
-                Design that goes beyond aesthetics — we craft experiences users
-                remember.
-              </h3>
-              <h3 className="font-bold mb-2 text-[#373737]">
-                Our design services cover:
-              </h3>
-              <ul className="list-disc pl-6 space-y-2 text-gray-600">
-                <li>UX Research & Wireframing</li>
-                <li>High-Fidelity UI Design</li>
-                <li>Prototyping (Figma, Adobe XD)</li>
-                <li>Design Systems & Brand Guidelines</li>
-                <li>Usability Testing & Iteration</li>
-              </ul>
-            </div>
-          </div>
+                  
+                    <div className={`p-6 lg:w-1/2 bg-white`}>
+                    <h3 className="text-xl font-bold text-gray-800 mb-3 hidden md:block">
+                      {service.title}
+                    </h3>
+                      <p className="text-gray-700 mb-4">{service.desc}</p>
+
+                      {isOpen && (
+                        
+                        <ul className="list-disc pl-5 text-gray-600 space-y-1 transition-opacity duration-300 opacity-100">
+                          {service.details.map((item, i) => (
+                            <li key={i}>{item}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
