@@ -40,7 +40,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="contact bg-gray-100 display: flex flex-col justify-center items-center pr-3 pl-3 sm:pr-4 sm:pl-4 md:pr-6 md:pl-6 lg:pr-8 lg:pl-8 pt-10 pb-20"
+      className="about bg-gray-100 display: flex flex-col justify-center items-center pr-3 pl-3 sm:pr-4 sm:pl-4 md:pr-6 md:pl-6 lg:pr-8 lg:pl-8 pt-10 pb-20"
     >
       <div className="contact-title mb-5">
         <h1 className="text-[#373737] text-4xl font-bold">

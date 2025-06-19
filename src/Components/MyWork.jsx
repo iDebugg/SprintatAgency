@@ -18,7 +18,7 @@ const MyWork = () => {
   }, []);
 
   return (
-    <section id="Portfolio" className="contact py-12 bg-gray-100 pb-10">
+    <section id="Portfolio" className="about py-12 bg-gray-100 pb-10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-[#373737] text-4xl font-bold">Our Approach</h2>

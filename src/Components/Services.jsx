@@ -9,7 +9,7 @@ const services = [
     title: "App Development",
     week: "01",
     desc: "Build seamless, high-performance mobile apps that users love.",
-    image: "/BeFunky-design.png",
+    image: "../assets/Union-1.svg",
     details: [
       "Native iOS & Android Development",
       "API Integration & Backend Services",
@@ -75,7 +75,7 @@ const Services = () => {
   };
 
   return (
-    <section className="pr-3 pl-3 sm:pr-4 sm:pl-4 md:pr-20 md:pl-20clg:pr-20 lg:pl-20 bg-gray-100">
+    <section id="Services" className="about bg-gray-100 pr-3 pl-3 sm:pr-4 sm:pl-4 md:pr-20 md:pl-20clg:pr-20 lg:pl-20 pt-10">
       <div className="text-center mb-20 ">
         <h2 className="text-[#373737]  text-4xl font-bold">Our Services</h2>
         <p className="text-lg text-gray-600 mt-2 text-center">
