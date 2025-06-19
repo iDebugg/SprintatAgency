@@ -302,7 +302,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white">
+      <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white" data-aos="fade-up">
         <div className="flex items-center space-x-3 text-sm font-semibold text-gray-500 mb-6">
           <span>[ 07 ] </span>
         </div>

@@ -15,7 +15,7 @@ const Navbar = () => {
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="sm:hidden text-[#373737] hover:text-white"
+          className="sm:hidden text-[#373737]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -103,10 +103,10 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="sm:hidden">
+        <div className="sm:hidden text-[#373737]">
           <a
             href="#"
-            className="block text-left mt-2 pb-3 hover:bg-orange-600"
+            className="block text-left mt-2 py-1  hover:bg-[#373737] hover:text-white font-semibold"
             onClick={() => {
               setMenu("home");
               setIsOpen(false);
@@ -118,7 +118,7 @@ const Navbar = () => {
           </a>
           <a
             href="#"
-            className="block text-left pb-3 hover:bg-orange-600"
+            className="block text-left py-1  hover:bg-[#373737] hover:text-white font-semibold"
             onClick={() => {
               setMenu("about");
               setIsOpen(false);
@@ -130,7 +130,7 @@ const Navbar = () => {
           </a>
           <a
             href="#"
-            className="block text-left pb-3 hover:bg-orange-600"
+            className="block text-left py-1  hover:bg-[#373737] hover:text-white font-semibold"
             onClick={() => {
               setMenu("Services");
               setIsOpen(false);
@@ -142,19 +142,31 @@ const Navbar = () => {
           </a>
           <a
             href="#"
-            className="block text-left pb-3 hover:bg-orange-600"
+            className="block text-left py-1  hover:bg-[#373737] hover:text-white font-semibold"
+            onClick={() => {
+              setMenu("PortfolioSection");
+              setIsOpen(false);
+            }}
+          >
+            <AnchorLink className="anchor-link" offset={50} href="#PortfolioSection">
+              Our Portfolio
+            </AnchorLink>
+          </a>
+          <a
+            href="#"
+            className="block text-left py-1  hover:bg-[#373737] hover:text-white font-semibold"
             onClick={() => {
               setMenu("Portfolio");
               setIsOpen(false);
             }}
           >
             <AnchorLink className="anchor-link" offset={50} href="#Portfolio">
-              Gallery
+              Our Approach
             </AnchorLink>
           </a>
           <a
             href="#"
-            className="block text-left pb-3 hover:bg-orange-600"
+            className="block text-left py-1  hover:bg-[#373737] hover:text-white font-semibold"
             onClick={() => {
               setMenu("Contact");
               setIsOpen(false);
