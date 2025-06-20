@@ -32,14 +32,12 @@ const About = () => {
       </div>
 
       <div className="text-center mb-5">
-        <h1 className="text-2xl md:text-3xl font-bold text-[#373737]">
+        <h1 className="text-2xl md:text-3xl font-light text-[#373737] italic">
           Our Core Values
         </h1>
       </div>
       <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-        <div className="flex items-center space-x-3 text-sm font-semibold text-gray-500 mb-6">
-          <span>[ 01 ] </span>
-        </div>
+       
 
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
@@ -63,9 +61,7 @@ const About = () => {
         </div>
       </div>
       <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-        <div className="flex items-center space-x-3 text-sm font-semibold text-gray-500 mb-6">
-          <span>[ 02 ] </span>
-        </div>
+        
 
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
@@ -89,9 +85,7 @@ const About = () => {
         </div>
       </div>
       <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-        <div className="flex items-center space-x-3 text-sm font-semibold text-gray-500 mb-6">
-          <span>[ 03 ] </span>
-        </div>
+      
 
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
@@ -115,9 +109,7 @@ const About = () => {
         </div>
       </div>
       <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white" data-aos="fade-up">
-        <div className="flex items-center space-x-3 text-sm font-semibold text-gray-500 mb-6">
-          <span>[ 04 ] </span>
-        </div>
+       
 
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
@@ -142,14 +134,12 @@ const About = () => {
       </div>
 
       <div className="text-center mb-5 mt-10">
-        <h1 className="text-2xl md:text-3xl font-bold text-[#373737]">
+      <h1 className="text-2xl md:text-3xl font-light text-[#373737] italic">
           Industries We Serve
         </h1>
       </div>
       <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-        <div className="flex items-center space-x-3 text-sm font-semibold text-gray-500 mb-6">
-          <span>[ 01 ] </span>
-        </div>
+        
 
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
@@ -173,9 +163,7 @@ const About = () => {
         </div>
       </div>
       <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-        <div className="flex items-center space-x-3 text-sm font-semibold text-gray-500 mb-6">
-          <span>[ 02 ] </span>
-        </div>
+       
 
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
@@ -199,9 +187,7 @@ const About = () => {
         </div>
       </div>
       <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-        <div className="flex items-center space-x-3 text-sm font-semibold text-gray-500 mb-6">
-          <span>[ 03 ] </span>
-        </div>
+       
 
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
@@ -225,9 +211,7 @@ const About = () => {
         </div>
       </div>
       <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-        <div className="flex items-center space-x-3 text-sm font-semibold text-gray-500 mb-6">
-          <span>[ 04 ] </span>
-        </div>
+      
 
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
@@ -251,9 +235,7 @@ const About = () => {
         </div>
       </div>
       <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-        <div className="flex items-center space-x-3 text-sm font-semibold text-gray-500 mb-6">
-          <span>[ 05 ] </span>
-        </div>
+       
 
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
@@ -277,9 +259,7 @@ const About = () => {
         </div>
       </div>
       <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-        <div className="flex items-center space-x-3 text-sm font-semibold text-gray-500 mb-6">
-          <span>[ 06 ] </span>
-        </div>
+     
 
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
@@ -303,9 +283,7 @@ const About = () => {
         </div>
       </div>
       <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white" data-aos="fade-up">
-        <div className="flex items-center space-x-3 text-sm font-semibold text-gray-500 mb-6">
-          <span>[ 07 ] </span>
-        </div>
+      
 
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">

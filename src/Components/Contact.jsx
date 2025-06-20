@@ -105,7 +105,7 @@ const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className="contact-submit  rounded-3xl text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl py-1 px-3 text-[#373737]"
+            className="contact-submit border border-[#373737] rounded-3xl text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl py-1 px-3 text-[#373737] hover:bg-[#373737] hover:text-white"
             data-aos="fade-up" data-aos-delay="400"
           >
             Submit now

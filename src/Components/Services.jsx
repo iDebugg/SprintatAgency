@@ -29,7 +29,7 @@ const services = [
       "E-commerce Platforms.",
       "CMS Solutions (WordPress, Webflow)",
       "Backend Development (Node.js, Django, Laravel)",
-      "Frontend Development (React, Vue, Angular)"
+      "Frontend Development (React, Vue, Angular)",
     ],
   },
   {
@@ -43,7 +43,7 @@ const services = [
       "High-Fidelity UI Design",
       "Prototyping (Figma, Adobe XD)",
       "Design Systems & Brand Guidelines",
-      "Usability Testing & Iteration"
+      "Usability Testing & Iteration",
     ],
   },
   {
@@ -75,7 +75,10 @@ const Services = () => {
   };
 
   return (
-    <section id="Services" className="about bg-gray-100 pr-3 pl-3 sm:pr-4 sm:pl-4 md:pr-20 md:pl-20clg:pr-20 lg:pl-20 pt-10">
+    <section
+      id="Services"
+      className="about bg-gray-100 pr-3 pl-3 sm:pr-4 sm:pl-4 md:pr-20 md:pl-20clg:pr-20 lg:pl-20 pt-10"
+    >
       <div className="text-center mb-20 ">
         <h2 className="text-[#373737]  text-4xl font-bold">Our Services</h2>
         <p className="text-lg text-gray-600 mt-2 text-center">
@@ -85,70 +88,128 @@ const Services = () => {
           digital presence.
         </p>
       </div>
-      <div className="relative z-10" data-aos="fade-up">
-        <div className=" mx-auto relative">
-          {services.map((service, index) => {
-            const isOpen = activeId === service.id;
-            const isAboveOpen = activeId && service.id > activeId;
+      <div
+        className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5"
+        data-aos="fade-up"
+      >
+        <div className="grid md:grid-cols-2 gap-10 ">
+          <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
+            <img
+              src="/mobile app.jpg"
+              alt="New Project Screenshot"
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-            return (
-              <div
-                key={service.id}
-                onClick={() => handleClick(service.id)}
-                className={`relative z-[${
-                  50 - index
-                }] transition-all duration-500 ease-in-out cursor-pointer
-              ${isOpen ? "mb-2" : "-mt-20"}
-              ${isAboveOpen ? "translate-y-20" : ""}
-            `}
-                style={{ transitionDelay: `${index * 100}ms` }}
-              >
-                <div className="bg-white shadow-xl border rounded-2xl overflow-hidden">
-                  <div className="flex items-center gap-4 px-6 py-4 bg-gradient-to-r from-[#00c9ff] to-[#92fe9d]">
-                    <div className="bg-white px-3 py-1 text-sm font-semibold rounded-full shadow text-gray-800">
-                      [ {service.week} ]
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-800 ">
-                      {service.title}
-                    </h3>
-                  </div>
+          <div>
+            <h2 className="text-2xl md:text-4xl font-bold text-[#373737] mb-3">
+              Mobile App Development
+            </h2>
 
-                  
-                  <div
-                    className={`flex flex-col lg:flex-row transition-all duration-500 ${
-                      isOpen ? "max-h-[1000px]" : "max-h-[150px]"
-                    } overflow-hidden`}
-                  >
-           
-                    <div className="lg:w-1/2 w-full">
-                      <img
-                        src={service.image}
-                        alt={service.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
+            <h1 className="italic text-gray-700 mb-3">
+              Build seamless, high-performance mobile apps that users love.
+            </h1>
+            <ul className="list-disc pl-6 space-y-1 text-gray-600">
+              <li>Frontend & backend development</li>
+              <li>Agile sprints & feature releases</li>
+              <li>API integrations</li>
+              <li>Testing & QA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5"
+        data-aos="fade-up"
+      >
+        <div className="grid md:grid-cols-2 gap-10 ">
+          <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
+            <img
+              src="/web development.jpg"
+              alt="New Project Screenshot"
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-                  
-                    <div className={`p-6 lg:w-1/2 bg-white`}>
-                    <h3 className="text-xl font-bold text-gray-800 mb-3 hidden md:block">
-                      {service.title}
-                    </h3>
-                      <p className="text-gray-700 mb-4">{service.desc}</p>
+          <div>
+            <h2 className="text-2xl md:text-4xl font-bold text-[#373737] mb-3">
+              Web Development
+            </h2>
 
-                      {isOpen && (
-                        
-                        <ul className="list-disc pl-5 text-gray-600 space-y-1 transition-opacity duration-300 opacity-100">
-                          {service.details.map((item, i) => (
-                            <li key={i}>{item}</li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+            <h1 className="italic text-gray-700 mb-3">
+              Fast, secure, and responsive websites built for modern business.
+            </h1>
+            <ul className="list-disc pl-6 space-y-1 text-gray-600">
+              <li>Custom Web Applications</li>
+              <li>Frontend Development (React, Vue, Angular)</li>
+              <li>Backend Development (Node.js, Django, Laravel)</li>
+              <li>CMS Solutions (WordPress, Webflow)</li>
+              <li>E-commerce Platforms.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5"
+        data-aos="fade-up"
+      >
+        <div className="grid md:grid-cols-2 gap-10 ">
+          <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
+            <img
+              src="/ui:ux.jpeg"
+              alt="New Project Screenshot"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          <div>
+            <h2 className="text-2xl md:text-4xl font-bold text-[#373737] mb-3">
+              UI/UX Design
+            </h2>
+
+            <h1 className="italic text-gray-700 mb-3">
+              Design that goes beyond aesthetics — we craft experiences users
+              remember.
+            </h1>
+            <ul className="list-disc pl-6 space-y-1 text-gray-600">
+              <li>UX Research & Wireframing</li>
+              <li>High-Fidelity UI Design</li>
+              <li>Prototyping (Figma, Adobe XD)</li>
+              <li>Design Systems & Brand Guidelines</li>
+              <li>Usability Testing & Iteration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white"
+        data-aos="fade-up"
+      >
+        <div className="grid md:grid-cols-2 gap-10 ">
+          <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
+            <img
+              src="/graphicdesign.webp"
+              alt="New Project Screenshot"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          <div>
+            <h2 className="text-2xl md:text-4xl font-bold text-[#373737] mb-3">
+              Graphic Design
+            </h2>
+
+            <h1 className="italic text-gray-700 mb-3">
+            Visual storytelling that captivates, communicates, and converts.
+            </h1>
+            <ul className="list-disc pl-6 space-y-1 text-gray-600">
+              <li>Brand Identity & Logo Design</li>
+              <li>Marketing Collateral (Flyers, Posters, Banners)</li>
+              <li>Social Media Graphics</li>
+              <li>Infographics & Data Visualization</li>
+              <li>Packaging & Print Design</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
