@@ -36,7 +36,7 @@ export default function PortfolioSection() {
   return (
     <section
     id="PortfolioSection"
-    className="about bg-gray-100 relative flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 pt-10 pb-20"
+    className="about bg-gray-100 relative flex flex-col justify-center items-center pr-3 pl-3 sm:pr-4 sm:pl-4 md:pr-20 md:pl-20clg:pr-20 lg:pl-20 pt-10"
   >
   
     <div className={`${selectedImage ? 'blur-sm pointer-events-none select-none' : ''} transition duration-300 w-full`}>
@@ -44,7 +44,7 @@ export default function PortfolioSection() {
         Our Portfolio
       </h2>
 
-      <div className="flex flex-wrap justify-center gap-4 mb-8">
+      <div className="flex flex-wrap justify-center gap-4 mb-8 ">
         {Object.keys(categories).map((category) => (
           <button
             key={category}
