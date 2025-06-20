@@ -52,7 +52,7 @@ const About = () => {
             <h2 className="text-2xl md:text-4xl font-bold text-[#373737] mb-6">
               Client-First Mentality
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 font-light">
               Your goals are our blueprint. We listen closely, understand
               deeply, and build solutions that align with your business
               objectives — not just what looks good on paper.
@@ -76,7 +76,7 @@ const About = () => {
             <h2 className="text-2xl md:text-4xl font-bold text-[#373737] mb-6">
               Attention to Details
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 font-light">
               Details make the difference. From pixel-perfect interfaces to
               robust backend logic, we obsess over the small things that lead to
               big results.
@@ -100,7 +100,7 @@ const About = () => {
             <h2 className="text-2xl md:text-4xl font-bold text-[#373737] mb-6">
               Quality Craftsmanship
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 font-light">
               Built to last, designed to scale. We take pride in clean code,
               thoughtful design, and software that’s as stable as it is
               stunning.
@@ -124,7 +124,7 @@ const About = () => {
             <h2 className="text-2xl md:text-4xl font-bold text-[#373737] mb-6">
               Transparent Collaboration
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 font-light">
               You’re always in the loop. We work with you — not just for you.
               Expect open communication, frequent updates, and a process that
               invites your feedback at every stage.
@@ -154,7 +154,7 @@ const About = () => {
             <h2 className="text-2xl md:text-4xl font-bold text-[#373737] mb-6">
               ⁠E-commerce
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 font-light">
               From storefronts to custom platforms, we build scalable e-commerce
               solutions that convert visitors into loyal customers — with speed,
               security, and UX top of mind.
@@ -178,7 +178,7 @@ const About = () => {
             <h2 className="text-2xl md:text-4xl font-bold text-[#373737] mb-6">
               Blockchain
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 font-light">
               We develop secure, decentralized applications (dApps), smart
               contracts, and blockchain-integrated platforms that push the
               boundaries of innovation.
@@ -202,7 +202,7 @@ const About = () => {
             <h2 className="text-2xl md:text-4xl font-bold text-[#373737] mb-6">
               Health & Wellness
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 font-light">
               HIPAA-compliant apps, wellness trackers, and digital tools that
               empower users to take charge of their physical and mental
               well-being.
@@ -226,7 +226,7 @@ const About = () => {
             <h2 className="text-2xl md:text-4xl font-bold text-[#373737] mb-6">
               EdTech
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 font-light">
               Interactive, accessible learning platforms for schools,
               institutions, and course creators. We help you deliver knowledge
               at scale.
@@ -250,7 +250,7 @@ const About = () => {
             <h2 className="text-2xl md:text-4xl font-bold text-[#373737] mb-6">
               SaaS & Startups
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 font-light">
               From MVP to full-scale product, we help SaaS founders bring ideas
               to life with agile development, clean design, and scalable
               infrastructure.
@@ -274,7 +274,7 @@ const About = () => {
             <h2 className="text-2xl md:text-4xl font-bold text-[#373737] mb-6">
               ⁠Finance & Accounting
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 font-light">
               We build secure, user-friendly financial tools — from budgeting
               platforms to custom dashboards — built to handle sensitive data
               with care.
@@ -298,7 +298,7 @@ const About = () => {
             <h2 className="text-2xl md:text-4xl font-bold text-[#373737] mb-6">
               Social & Community Platforms
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 font-light">
               Create meaningful digital communities with social networks,
               messaging apps, and engagement-driven platforms that connect
               people.

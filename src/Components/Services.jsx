@@ -82,7 +82,7 @@ const Services = () => {
       <div className="text-center mb-20 ">
         <h2 className="text-[#373737]  text-4xl font-bold">Our Services</h2>
         <p className="text-lg text-gray-600 mt-2 text-center">
-          we turn ideas into powerful digital experiences. Whether you're a{" "}
+          We turn ideas into powerful digital experiences. Whether you're a{" "}
           <br />
           startup looking to build your MVP or an enterprise scaling your
           digital presence.
@@ -106,10 +106,10 @@ const Services = () => {
               Mobile App Development
             </h2>
 
-            <h1 className="italic text-gray-700 mb-3">
+            <h1 className="italic text-gray-700 mb-3 font-light">
               Build seamless, high-performance mobile apps that users love.
             </h1>
-            <ul className="list-disc pl-6 space-y-1 text-gray-600">
+            <ul className="list-disc pl-6 space-y-1 text-gray-600 font-light">
               <li>Frontend & backend development</li>
               <li>Agile sprints & feature releases</li>
               <li>API integrations</li>
@@ -136,10 +136,10 @@ const Services = () => {
               Web Development
             </h2>
 
-            <h1 className="italic text-gray-700 mb-3">
+            <h1 className="italic text-gray-700 mb-3 font-light">
               Fast, secure, and responsive websites built for modern business.
             </h1>
-            <ul className="list-disc pl-6 space-y-1 text-gray-600">
+            <ul className="list-disc pl-6 space-y-1 text-gray-600 font-light">
               <li>Custom Web Applications</li>
               <li>Frontend Development (React, Vue, Angular)</li>
               <li>Backend Development (Node.js, Django, Laravel)</li>
@@ -167,11 +167,11 @@ const Services = () => {
               UI/UX Design
             </h2>
 
-            <h1 className="italic text-gray-700 mb-3">
+            <h1 className="italic text-gray-700 mb-3 font-light">
               Design that goes beyond aesthetics — we craft experiences users
               remember.
             </h1>
-            <ul className="list-disc pl-6 space-y-1 text-gray-600">
+            <ul className="list-disc pl-6 space-y-1 text-gray-600 font-light">
               <li>UX Research & Wireframing</li>
               <li>High-Fidelity UI Design</li>
               <li>Prototyping (Figma, Adobe XD)</li>
@@ -199,10 +199,10 @@ const Services = () => {
               Graphic Design
             </h2>
 
-            <h1 className="italic text-gray-700 mb-3">
+            <h1 className="italic text-gray-700 mb-3 font-light">
             Visual storytelling that captivates, communicates, and converts.
             </h1>
-            <ul className="list-disc pl-6 space-y-1 text-gray-600">
+            <ul className="list-disc pl-6 space-y-1 text-gray-600 font-light">
               <li>Brand Identity & Logo Design</li>
               <li>Marketing Collateral (Flyers, Posters, Banners)</li>
               <li>Social Media Graphics</li>

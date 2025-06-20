@@ -56,9 +56,16 @@ const Contact = () => {
             We are currently available to be at your service !
           </p>
           <div className="contact-details display: flex flex-col gap-4">
-            <div className="contact-detail display: flex items-center gap-3" data-aos="fade-down" data-aos-delay="300">
-              <i class="fa-solid fa-envelope"></i> <p>support@sprintat.com</p>
-            </div>
+          <a 
+  href="mailto:support@sprintat.com" 
+  className="contact-detail flex items-center gap-3 cursor-pointer" 
+  data-aos="fade-down" 
+  data-aos-delay="300"
+>
+  <i className="fa-solid fa-envelope"></i>
+  <p>support@sprintat.com</p>
+</a>
+
             
             <div className="contact-detail display: flex items-center gap-3" data-aos="fade-down" data-aos-delay="400">
               <i class="fa-brands fa-instagram"></i>{" "}
