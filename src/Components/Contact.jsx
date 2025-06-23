@@ -73,6 +73,12 @@ const Contact = () => {
                 Sprintat
               </a>
             </div>
+            <div className="contact-detail display: flex items-center gap-3" data-aos="fade-down" data-aos-delay="400">
+              <i class="fa-brands fa-twitter"></i>{" "}
+              <a href="https://x.com/Sprintat272793" target="blank" rel="noopener noreferrer">
+                Sprintat
+              </a>
+            </div>
             
           </div>
         </div>

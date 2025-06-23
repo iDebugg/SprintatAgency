@@ -24,10 +24,17 @@ const About = () => {
     >
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-[#373737]">About Us</h2>
-        <p className="mt-4 max-w-3xl mx-auto text-gray-600">
-          At Sprintat, we’re a team of designers, developers, and
-          problem-solvers passionate about transforming ideas into innovative
-          software.
+        <p className="mt-4 max-w-5xl mx-auto text-gray-600">
+          Ready to transform your ideas into groundbreaking software solutions?
+          Sprintat Agency is your creative digital partner! We're a team of
+          passionate designers, developers, and problem-solvers, dedicated to
+          crafting innovative web and mobile solutions tailored for modern
+          businesses. From e-commerce platforms to blockchain applications and
+          everything in between, we offer comprehensive services, including web
+          design, software development, mobile app creation, and technology
+          consulting. We focus on client-first strategies, attention to detail,
+          quality craftsmanship, and transparent collaboration, ensuring your
+          vision becomes a reality. Let's build something amazing together!
         </p>
       </div>
 
@@ -36,9 +43,10 @@ const About = () => {
           Our Core Values
         </h1>
       </div>
-      <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-       
-
+      <div
+        className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5"
+        data-aos="fade-up"
+      >
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
             <img
@@ -60,9 +68,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-        
-
+      <div
+        className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5"
+        data-aos="fade-up"
+      >
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
             <img
@@ -84,9 +93,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-      
-
+      <div
+        className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5"
+        data-aos="fade-up"
+      >
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
             <img
@@ -108,9 +118,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white" data-aos="fade-up">
-       
-
+      <div
+        className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white"
+        data-aos="fade-up"
+      >
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
             <img
@@ -134,13 +145,14 @@ const About = () => {
       </div>
 
       <div className="text-center mb-5 mt-10">
-      <h1 className="text-2xl md:text-3xl font-light text-[#373737] italic">
+        <h1 className="text-2xl md:text-3xl font-light text-[#373737] italic">
           Industries We Serve
         </h1>
       </div>
-      <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-        
-
+      <div
+        className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5"
+        data-aos="fade-up"
+      >
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
             <img
@@ -162,9 +174,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-       
-
+      <div
+        className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5"
+        data-aos="fade-up"
+      >
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
             <img
@@ -186,9 +199,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-       
-
+      <div
+        className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5"
+        data-aos="fade-up"
+      >
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
             <img
@@ -210,9 +224,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-      
-
+      <div
+        className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5"
+        data-aos="fade-up"
+      >
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
             <img
@@ -234,9 +249,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-       
-
+      <div
+        className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5"
+        data-aos="fade-up"
+      >
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
             <img
@@ -258,9 +274,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5" data-aos="fade-up">
-     
-
+      <div
+        className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white mb-5"
+        data-aos="fade-up"
+      >
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
             <img
@@ -282,9 +299,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white" data-aos="fade-up">
-      
-
+      <div
+        className="rounded-[40px] border border-gray-200 p-8 md:p-14 relative overflow-hidden bg-white"
+        data-aos="fade-up"
+      >
         <div className="grid md:grid-cols-2 gap-10 ">
           <div className="relative w-full aspect-video bg-white rounded-xl overflow-hidden shadow-lg">
             <img
