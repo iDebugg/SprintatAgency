@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion"; // ✅ Add this
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const categories = {
   "App Development": [
@@ -20,7 +20,32 @@ const categories = {
 
 export default function PortfolioSection() {
   const [activeCategory, setActiveCategory] = useState("App Development");
+  const [imagesToDisplay, setImagesToDisplay] = useState(categories["App Development"]);
+  const [loading, setLoading] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleCategoryChange = (category) => {
+    if (category === activeCategory) return;
+
+    setActiveCategory(category);
+    setLoading(true);
+
+    // Preload images
+    const newImages = categories[category];
+    const imagePromises = newImages.map((src) => {
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.src = src;
+        img.onload = resolve;
+        img.onerror = resolve;
+      });
+    });
+
+    Promise.all(imagePromises).then(() => {
+      setImagesToDisplay(newImages);
+      setLoading(false);
+    });
+  };
 
   return (
     <section
@@ -40,7 +65,7 @@ export default function PortfolioSection() {
           {Object.keys(categories).map((category) => (
             <button
               key={category}
-              onClick={() => setActiveCategory(category)}
+              onClick={() => handleCategoryChange(category)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition ${
                 activeCategory === category
                   ? "bg-[#DAFB18] text-gray-700"
@@ -52,30 +77,37 @@ export default function PortfolioSection() {
           ))}
         </div>
 
-        <div className="max-h-[500px] overflow-y-auto rounded-md">
-          <div
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4"
-            style={{ gridAutoRows: "minmax(200px, auto)" }}
-          >
-            {categories[activeCategory].map((src, index) => (
-              <div
-                key={index}
-                className="overflow-hidden rounded-lg shadow hover:shadow-lg transition cursor-pointer"
-                onClick={() => setSelectedImage(src)}
-              >
-                <img
-                  src={src}
-                  loading="lazy"
-                  alt={`${activeCategory} ${index + 1}`}
-                  className="w-full h-80 object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-            ))}
+        {/* Loading Indicator */}
+        {loading ? (
+          <div className="flex justify-center items-center min-h-[200px]">
+            <div className="w-12 h-12 border-4 border-gray-300 border-t-[#DAFB18] rounded-full animate-spin"></div>
           </div>
-        </div>
+        ) : (
+          <div className="max-h-[500px] overflow-y-auto rounded-md">
+            <div
+              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4"
+              style={{ gridAutoRows: "minmax(200px, auto)" }}
+            >
+              {imagesToDisplay.map((src, index) => (
+                <div
+                  key={index}
+                  className="overflow-hidden rounded-lg shadow hover:shadow-lg transition cursor-pointer"
+                  onClick={() => setSelectedImage(src)}
+                >
+                  <img
+                    src={src}
+                    loading="lazy"
+                    alt={`${activeCategory} ${index + 1}`}
+                    className="w-full h-80 object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
-      
+      {/* Fullscreen Modal */}
       <AnimatePresence>
         {selectedImage && (
           <motion.div
